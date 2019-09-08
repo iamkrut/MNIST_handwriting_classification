@@ -13,7 +13,7 @@ mnist_valset, mnist_testset = torch.utils.data.random_split(mnist_testset, [int(
 
 train_dataloader = torch.utils.data.DataLoader(mnist_trainset, batch_size=64, shuffle=True)
 val_dataloader = torch.utils.data.DataLoader(mnist_valset, batch_size=32, shuffle=False)
-test_dataloader = torch.utils.data.DataLoader(mnist_testset, batch_size=1, shuffle=False)
+test_dataloader = torch.utils.data.DataLoader(mnist_testset, batch_size=32, shuffle=False)
 
 print("Training dataset size: ", len(mnist_trainset))
 print("Validation dataset size: ", len(mnist_valset))
